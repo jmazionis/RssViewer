@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feeds>
+  <Feed>
+    <Url>http://rss.cnn.com/rss/edition_europe.rss</Url>
+    <LastUpdated>2012.06.07 11:43:08 -04:00</LastUpdated>
+  </Feed>
+  <Feed>
+    <Url>http://www.gamespot.com/rss/game_updates.php?platform=5</Url>
+    <LastUpdated>2012.06.27 14:24:01 -07:00</LastUpdated>
+  </Feed>
+  <Feed>
+    <Url>http://www.15min.lt/rss-feeds/pinigai/itkodas/</Url>
+    <LastUpdated>2012.06.27 22:16:02 +03:00</LastUpdated>
+  </Feed>
+  <Feed>
+    <Url>http://www.autoblog.com/rss.xml</Url>
+    <LastUpdated>2012.06.27 18:00:00 -05:00</LastUpdated>
+  </Feed>
+</Feeds>
