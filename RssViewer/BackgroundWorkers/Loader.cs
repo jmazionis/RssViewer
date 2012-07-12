@@ -39,7 +39,7 @@ namespace RssViewer.BackgroundWorkers
             Action changeStatusState = () => this.mWindow.statusMessageBox.Text = "Loading channels...";
             this.mWindow.statusMessageBox.Dispatcher.BeginInvoke(DispatcherPriority.Normal, changeStatusState);
             BackgroundWorker worker = sender as BackgroundWorker;
-            this.mWindow.feedList = FeedHelper.LoadFeeds(@"C:\Users\Julius\documents\visual studio 2010\Projects\RssViewer\RssViewer\RssData.xml").ToList();
+            this.mWindow.feedList = FeedHelper.LoadFeeds(FeedHelper.LocateFeedData()).ToList();
             this.mWindow.channelList = new List<SyndicationFeed>();
             for (int i = 0; i < this.mWindow.feedList.Count; i++)
             {

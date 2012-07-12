@@ -10,7 +10,7 @@ namespace RssViewer.Utilities
 {
     public static class FeedHelper
     {
-        public const string RssDataPath = @"C:\Users\Julius\documents\visual studio 2010\Projects\RssViewer\RssViewer\RssData.xml";
+        private static string RssDataPath = LocateFeedData();
 
         public static IEnumerable<RssFeed> LoadFeeds(string xmlUri)
         {
@@ -48,6 +48,14 @@ namespace RssViewer.Utilities
                                                     new XElement("LastUpdated", f.LastUpdated))
                                        );
             newXml.Save(RssDataPath);
+        }
+
+        public static string LocateFeedData() //get RssData.xml file path
+        {
+            string projectPath = Environment.CurrentDirectory; 
+            string rssDataPath = projectPath.Replace("\\bin\\Debug", "");
+            rssDataPath += "\\RssData.xml";
+            return rssDataPath;
         }
     }
 }
